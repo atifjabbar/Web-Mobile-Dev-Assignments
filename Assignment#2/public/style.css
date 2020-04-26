@@ -1,0 +1,68 @@
+/*             MSG.HTML              */
+#imgmsg {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+#msgmsg {
+    text-align: center;
+    color: rgb(121, 74, 214);
+}
+
+
+/*             INDEX.HTML             */
+#imgfrm {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: mediumpurple;
+    width: 35%;
+}
+#headfrm {
+    text-align: center;
+    color: mediumpurple;
+}
+#div1 {
+    color: white;
+}
+#formcent {
+    background-color: mediumpurple;
+    position: relative;                    /*position: absolute; its use for centered and fit to the content of form*/
+    padding: 1%;
+    left: 25%;
+    border: black;
+    width: fit-content;                   /*its use for fit to the content of form only*/
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
+.tab {
+    position: absolute;
+    left: 30%;
+}
+
+#dates {position: absolute; left: 30%;}
+#months {position: absolute; left: 40%;}
+#years {position: absolute; left: 52%;}
+
+#genrad1 {position: absolute; left: 37%;}
+#genrad2 {position: absolute; left: 55%;}
+
+#txtara {position: absolute; left: 30%;}
+
+#hobchk1 {position: absolute; left: 40%;}
+#hobchk2 {position: absolute; left: 55%;}
+#hobchk3 {position: absolute; left: 70%;}
+#hobchk4 {position: absolute; left: 86%;}
+#hobtxtbx {position: absolute; left: 45%}
+
+#qualtab {position: relative; left: 30%;}
+
+#cafrad1 {position: absolute; left: 36%;}
+#cafrad2 {position: absolute; left: 51%;}
+#cafrad3 {position: absolute; left: 66%;}
+#cafrad4 {position: absolute; left: 81%;}
+
+#butcent1 {position: relative; left: 38%;}
+#butcent2 {position: relative; left: 39%;}
