@@ -1,0 +1,17 @@
+.header {
+    background-color:#0040FF;
+    height: 50px;
+    width: auto;
+}
+
+.social {
+}
+
+.but-ref {
+    inline-size: auto;
+    display: inline-block;
+}
+
+.btn btn-default btn-flat btn-xs bg-light p-5 font-11 pl-10 pr-10 {
+    font-size: 11px;
+}
