@@ -481,8 +481,51 @@ input[type=search]:focus {
     }
   }
 
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+.title {
+    color: cornflowerblue;
+    font-family:'merriweather',serif;
+    font-size: 40px; 
+}
 
+.titlecnt {
+  color: cornflowerblue;
+  font-family:'merriweather',serif;
+  font-size: 15px; 
+}
+
+.titlecount {
+  color: cornflowerblue;
+  font-family:'merriweather',serif;
+  font-size: 40px;
+  color: white; 
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: darkgreen;
+}
 
   .play-icon {
     -webkit-box-align: center;
