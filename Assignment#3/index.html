@@ -6,206 +6,678 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <script src="app.js"></script>
 
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/js/bootstrap.min.js">
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/js/bootstrap.js">
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/js/bootstrap.bundle.js">
-
-    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animate.css">
-    <link rel="stylesheet" href="jquery-ui.min.css">
-    <link rel="stylesheet" href="css-plugin-collections.css">
-    <link rel="stylesheet" id="menuzord-menu-skins" href="menuzord-rounded-boxes.css" />
-    <link rel="stylesheet" href="custom-bootstrap-margin.padding.css">
 
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- fa fa-2x fa-facebook ==>>>> these classes link to above link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
 
-
-
-
-
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
 
 </head>
 
-<body class="">
-    <div id="wrapper" class="clearfix">
+<body>
+
+    <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
         <header class="header">
-            <div class="header-top bg-theme-colored sm-text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="widget no-border m-0">
-                                <ul class="styled-icons icon-dark icon-theme-colored icon-sm sm-text-center social">
-                                    <li><a href="https://www.facebook.com/pg/saylaniwelfare" target="_blank"><img
-                                                src="image/facebook.png" height="20px"></a></li>
-                                    <li><a href="https://twitter.com/OfficialSwit" target="_blank"><img
-                                                src="image/twitter.png" height="20px"></a></li>
-                                    <li><a href="https://www.instagram.com/saylaniwelfare/" target="_blank"><img
-                                                src="image/instagram.jpg" height="20px"></a></li>
-                                    <li><a href="https://www.youtube.com/c/SaylaniWelfareTrustOfficialPage"
-                                            target="_blank"><img src="image/youtube.jpg" height="20px"></a></li>
-                                    <li><a href="https://wa.me/923331201585" target="_blank"><img
-                                                src="image/whatsapp.png" height="20px"></a></li>
-                                </ul>
-                            </div>
+            <!-- Top Header Start -->
+            <div class="header-top sm-text-center" style="background-color: rgba(42, 114, 197, 0.925)">
+                <div class="container-fluid">
+                    <div class="row justify-content-md-center">
+                        <div class="col-sm-12 col-md-3 socialc">
+                            <a id="sociali" target="_blank" href="https://www.facebook.com/saylaniwelfare/"><i
+                                    class="fa fa-2x fa-facebook"></i></a>
+                            <a id="sociali" target="_blank" href="https://twitter.com/OfficialSwit"><i
+                                    class="fa fa-2x fa-twitter"></i></a>
+                            <a id="sociali" target="_blank" href="https://www.instagram.com/saylaniwelfare/"><i
+                                    class="fa fa-2x fa-instagram"></i></a>
+                            <a id="sociali" target="_blank"
+                                href="https://www.youtube.com/c/SaylaniWelfareTrustOfficialPage"><i
+                                    class="fa fa-2x fa-youtube"></i></a>
+                            <a id="sociali" target="_blank"
+                                href="https://api.whatsapp.com/send?phone=923331201585&text=&source=&data=&app_absent="><i
+                                    class="fa fa-2x fa-whatsapp"></i></a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="widget no-border m-0" style="text-align: center;padding-top: 7px;">
                                 <span style="color: white;"> Millions of people's life has changed, millions more
                                     awaiting your donation</span>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="widget no-border m-0">
-                                <a class="btn btn-default btn-flat btn-xs bg-light p-5 font-11 pl-10 pr-10"
-                                    style="color: #427900" href="https://www.saylaniwelfare.com/UK-Ramzan"
-                                    target="_blank">UK Donor</a>
-                                <a class="btn btn-default btn-flat btn-xs bg-light p-5 font-11 pl-10 pr-10"
-                                    style="color: #427900" href="https://www.saylaniwelfare.com/Online-Sadqah"
-                                    target="_blank">Donate
-                                    Now</a>
-                                <a class="btn btn-default btn-flat btn-xs bg-light p-5 font-11 pl-10 pr-10"
-                                    style="color: #427900" href="https://www.saylaniwelfare.com/result"
-                                    target="_blank">SMIT
-                                    Results</a>
+                        <div class="col-md-3 col-sm-12">
+                            <div class="btn-group btn-group-sm pt-1" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary">
+                                    <a href="https://www.saylaniwelfare.com/UK-Ramzan" target="_blank"
+                                        style="color: whitesmoke;">UK Donor</a>
+                                </button>
+                                <button type="button" class="btn btn-secondary">
+                                    <a href="https://www.saylaniwelfare.com/Online-Sadqah" target="_blank"
+                                        style="color: whitesmoke;">Donate Now</a>
+                                </button>
+                                <button type="button" class="btn btn-secondary">
+                                    <a href="https://www.saylaniwelfare.com/result" target="_blank"
+                                        style="color: whitesmoke;">SMIT Results</a>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Top Header End -->
 
-
-
-
+            <!-- Navigation Bar Start -->
             <div class="header-nav">
-                <div class="header-nav-wrapper navbar-scrolltofixed bg-silver-light">
-                    <div class="container mar-0 pad-0">
-
-                        <nav id="menuzord-right" class="menuzord default no-bg">
-                            <div class="menuzord-brand pull-left flip" href="javascript:void(0)"><img
-                                    src="image/Saylani-logo.png" alt=""></div>
-
-
-
-                            <ul class="menuzord-menu ">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="#">About</a>
-                                    <ul class="dropdown">
-                                        <li><a href="https://www.saylaniwelfare.com/Introduction">Introduction</a></li>
-                                        <li><a href="https://www.saylaniwelfare.com/Chairman-Message">Chairman
-                                                Message</a></li>
-                                        <li><a href="https://www.saylaniwelfare.com/Saylani-Annual-Report">Saylani
-                                                Annual Report</a></li>
-                                    </ul>
-                                </li>
-
-                                <li><a href="#">Saylani Services</a>
-
-                                </li>
-                                <li><a href="#">Future Project</a>
-                                    <ul class="dropdown">
-                                        <li><a href="https://www.saylaniwelfare.com/Saylani-University">Saylani
-                                                University</a></li>
-                                        <li><a href="https://www.saylaniwelfare.com/Saylani-City">Saylani City</a></li>
-                                    </ul>
-
-                                </li>
-                                <li><a href="https://www.saylaniwelfare.com/Media">Media</a></li>
-                                <li><a href="https://www.saylaniwelfare.com/News">News</a></li>
-                                <li><a href="https://www.saylaniwelfare.com/Donation">Donation</a>
-                                    <ul class="dropdown">
-                                        <li><a href="https://www.saylaniwelfare.com/Bank-Detail">Bank Details</a></li>
-                                        <li><a href="https://www.saylaniwelfare.com/Sadqa">Sadqa</a></li>
-                                        <li><a href="https://www.saylaniwelfare.com/Aqiqa">Aqiqa</a></li>
-                                        <li><a href="https://www.saylaniwelfare.com/Donation">Other Donation</a>
-                                        <li><a href="https://www.saylaniwelfare.com/Corona-Effecties">Corona
-                                                Effecties</a>
-
-                                        <li><a href="https://www.saylaniwelfare.com/">Ramzan - 2020</a>
-                                            <ul class="dropdown">
-                                                <li><a href="https://www.saylaniwelfare.com/SAR-Ramzan">For Saudi
-                                                        Donor</a></li>
-                                                <li><a href="https://www.saylaniwelfare.com/EURO-Ramzan">For Europe
-                                                        Donor</a></li>
-                                                <li><a href="https://www.saylaniwelfare.com/UK-Ramzan">For UK Donor</a>
+                <div class="container-fluid">
+                    <div class="header-nav-wrapper navbar-scrolltofixed bg-silver-light navbar sticky-top">
+                        <div class="row justify-content-md-center py-1 bg-light">
+                            <div class="col-sm-5 col-12">
+                                <img src="image/Saylani-logo.png" class="w-50 ml-5" alt="Saylani-logo">
+                            </div>
+                            <div class="col-sm-7 col-12">
+                                <div class="row">
+                                    <nav class="navbar navbar-expand-lg navbar-light">
+                                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                            <ul class="navbar-nav">
+                                                <li class="nav-item active">
+                                                    <a class="nav-link btn btn-outline-primary active"
+                                                        href="https://www.saylaniwelfare.com/home">Home <span
+                                                            class="sr-only">(current)</span></a>
                                                 </li>
-                                                <li><a href="https://www.saylaniwelfare.com/USA-Ramzan">For USA
-                                                        Donor</a></li>
-                                                <li><a href="https://www.saylaniwelfare.com/UAE-Ramzan">For UAE
-                                                        Donor</a></li>
-                                                <li><a href="https://www.saylaniwelfare.com/Ramzan">For PAK Donor</a>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle btn btn-outline-primary" href="#"
+                                                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        About
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-content"
+                                                        aria-labelledby="navbarDropdownMenuLink">
+                                                        <a class="dropdown-item"
+                                                            href="https://www.saylaniwelfare.com/Introduction">Introduction</a>
+                                                        <a class="dropdown-item"
+                                                            href="https://www.saylaniwelfare.com/Chairman-Message">Chairman
+                                                            Message</a>
+                                                        <a class="dropdown-item"
+                                                            href="https://www.saylaniwelfare.com/Saylani-Annual-Report">Saylani
+                                                            Annual
+                                                            Report</a>
+                                                    </div>
                                                 </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle btn btn-outline-primary" href="#"
+                                                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        Saylani Services
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-content"
+                                                        aria-labelledby="navbarDropdownMenuLink">
 
-                                                <!-- <li><a href="https://www.saylaniwelfare.com/">Eid-Ul-Adha - 2020</a>-->
-                                                <!-- <ul class="dropdown">-->
-                                                <!--   <li><a href="https://www.saylaniwelfare.com/qurbani">For PAK Donor</a> -->
-                                                <!--   <li><a href="https://www.saylaniwelfare.com/qurbanius">For USA Donor</a>-->
-                                                <!--   <li><a href="https://www.saylaniwelfare.com/qurbanieuro">For Europe Donor</a>-->
-                                                <!--   <li><a href="https://www.saylaniwelfare.com/qurbaniuae">For UAE Donor</a>-->
-                                                <!--    <li><a href="https://www.saylaniwelfare.com/qurbanikwd">For Kuwait Donor</a>-->
+                                                        <a class="dropdown-item" href="#">Education</a>
+                                                        <a class="dropdown-item" href="#">Medical</a>
+                                                        <a class="dropdown-item" href="#">Welfare</a>
+                                                        <a class="dropdown-item" href="#">Hajj Application Form</a>
+                                                        <a class="dropdown-item" href="#">Saylani Dastarkhwan</a>
+                                                        <a class="dropdown-item" href="#">Saylani RO Plant</a>
+                                                        <a class="dropdown-item" href="#">Online Sadqah</a>
+                                                        <a class="dropdown-item" href="#">Online Taweezat/Istekhara</a>
+                                                        <a class="dropdown-item" href="#">Saylani Jo Bank</a>
+                                                        <a class="dropdown-item" href="#">Online Quran Academy</a>
+                                                        <a class="dropdown-item" href="#">Books</a>
+                                                        <a class="dropdown-item" href="#">Saylani Online Masajid</a>
 
-
-
-
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle btn btn-outline-primary" href="#"
+                                                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        Future Project
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-content"
+                                                        aria-labelledby="navbarDropdownMenuLink">
+                                                        <a class="dropdown-item"
+                                                            href="https://www.saylaniwelfare.com/Saylani-University">Saylani
+                                                            University</a>
+                                                        <a class="dropdown-item"
+                                                            href="https://www.saylaniwelfare.com/Saylani-City">Saylani
+                                                            City</a>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link btn btn-outline-primary"
+                                                        href="https://www.saylaniwelfare.com/Media">Media</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link btn btn-outline-primary"
+                                                        href="https://www.saylaniwelfare.com/News">News</a>
+                                                </li>
+                                                <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle btn btn-outline-primary"
+                                                        href="https://www.saylaniwelfare.com/Donation"
+                                                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        Donation
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-content"
+                                                        aria-labelledby="navbarDropdownMenuLink">
+                                                        <a class="dropdown-item" href="#">Bank Details</a>
+                                                        <a class="dropdown-item" href="#">Sadqa</a>
+                                                        <a class="dropdown-item" href="#">Aqiqa</a>
+                                                        <a class="dropdown-item" href="#">Other Donations</a>
+                                                        <a class="dropdown-item" href="#">Corona Effecties</a>
+                                                        <a class="dropdown-item" href="#">Ramzan-2020</a>
+                                                        <a class="dropdown-item" href="#">Contact Us</a>
+                                                    </div>
+                                                </li>
                                             </ul>
-                                        </li>
-                                        <li><a href="https://www.saylaniwelfare.com/Contact-Us">Contact Us</a></li>
-                                    </ul>
-
-                                    <!-- <li><a href="#hadith">Hadith</a></li> -->
-                                    <!-- <li class="active"><a href="#home">Donate <img class="" src="images/khuddam/donate.png" style="width: 18px;"></a></li> -->
-                            </ul>
-
-
-                        </nav>
-
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Navigation Bar End -->
         </header>
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">About</a>
-                <ul class="dropdown">
-                    <li><a href="https://www.saylaniwelfare.com/Introduction">Introduction</a></li>
-                    <li><a href="https://www.saylaniwelfare.com/Chairman-Message">Chairman
-                            Message</a></li>
-                    <li><a href="https://www.saylaniwelfare.com/Saylani-Annual-Report">Saylani
-                            Annual Report</a></li>
-                </ul>
-            </li>
-        </ul>
 
+        <!-- Slider Start -->
+        <section>
+            <div class="container-fluid">
+                <div class="row bg-light">
+                    <div class="col-md-12">
+                        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-interval="5000">
+                                    <img src="image/Banner.jpeg" class="d-block w-100" alt="Banner">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="image/ehsaas&saylani.jpeg" class="d-block w-100" alt="ehsaas">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="image/BloodBank_Slider.jpg" class="d-block w-100" alt="Blood">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="image/slider1.png" class="d-block w-100" alt="Slider1">
+                                </div>
+                                <div class="carousel-item" data-interval="5000">
+                                    <img src="image/slider2.png" class="d-block w-100" alt="Slider2">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleInterval" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Slider End -->
 
+        <!-- News Marquee Start -->
+        <section>
+            <div class="container my-2 bg-primary">
+                <div class="marquee-box pt-1">
+                    <marquee behavior="loop" direction="left">
+                        <font color="#0bea4a">(News-1 Dated:15-06-2019) </font>
+                        <font color="#ffffff">PIAIC Next Phase Admission in Islamabad And Faisalabad" .</font>
+                        <font color="blue">More Details</font>
+                        <font color="#0bea4a">(News-2 Dated:15-05-2019)</font>
+                        <font color="#ffffff">Saylani Welfare Announced "Donation Application" .</font>
+                        <font color="blue">More Details</font>
+                        <font color="#0bea4a">(News-3 Dated:07-05-2019)</font>
+                        <font color="#ffffff">Alhamdulillah Saylani Organized 200+ Locations For Iftar And Sehri In
+                            This Holy Month .</font>
+                        <font color="blue">More Details</font>
+                        <font color="#0bea4a">(News-4 Dated:08-03-2019)</font>
+                        <font color="#ffffff">Saylani Welfare Distributing Ration & Clothes to affected people of
+                            Balochistan.</font>
+                        <font color="blue">More Details</font>
+                        <font color="#0bea4a">(News-5 Dated:25-02-2019)</font>
+                        <font color="#ffffff">PIAIC Entrance Exam Merit Ranking List Announced.</font>
+                        <font color="blue">More Details</font>
+                        <font color="#0bea4a">(News-Dated:23-02-2019)</font>
+                        <font color="#ffffff">President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare
+                            International
+                            Trust HeadOffice Karachi. </font>
+                        <font color="blue">More Details</font>
+                        <font color="#0bea4a">(News-7 Dated:19-02-2019)</font>
+                        <font color="#ffffff">Dr Jamil Ahmed (Additional Inspector General of Police) & Atiqmir Visit
+                            Saylani Welfare International Trust, Saylani Mass I.T. Training.</font>
+                        <font color="blue">More Details</font>
 
+                    </marquee>
+                </div>
+            </div>
+        </section>
+        <!-- News Marquee End -->
 
+        <!-- Introduction Start -->
+        <section>
+            <div class="container-fluid p-2 bg-light text-dark">
+                <div class="row">
+                    <div class="col-md-12 text-center title">
+                        <h2 class="text-uppercase text-primary blue mt-5">Intro<span
+                                class="text-success font-weight-1000 green">duction</h2>
+                        <div class="title-icon">
+                            <img src="image/problem.PNG" style="height: 45px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-md-10">
+                        <p class="text-muted">
+                            Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed
+                            Farooqui,
+                            Saylani Welfare
+                            International Trust was built on the fundamentals of breaking the cycle of poverty,
+                            alleviating
+                            the financial troubles
+                            of the poor, giving people a chance to live a dignified life and spreading happiness.
+                        </p>
+                        <p class="text-muted mt-4">
+                            We are an organization that believes in lighting up the lives of underprivileged people
+                            across
+                            the world. We endeavor to
+                            provide the best quality services in areas including food, education, medical and social
+                            welfare
+                            free of cost to people
+                            living in the dark. With over 60 different sectors, we feed thousands of hungry people each
+                            day,
+                            hundreds more are given
+                            the hope of life through medical health care, many are educated to become leaders of
+                            tomorrow
+                            and several are given the
+                            opportunity to stand on their feet financially.
+                        </p>
+                        <p class="text-muted mt-4">
+                            Today, we are proud to say that our physical presence extends throughout Pakistan with a
+                            vast
+                            network of 125 branches
+                            operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and
+                            Faisalabad. Apart from
+                            Pakistan, we have overseas offices in the UK, USA and UAE as well. Our worldwide branches
+                            are
+                            operating under the
+                            guidance of a team of over 2,000 working professionals who help almost 125,000 people on a
+                            daily
+                            basis.
+                        </p>
+                        <p class="text-muted mt-4">
+                            We strongly believe that a little help goes a long way and our work would not be possible
+                            without the generous support
+                            of our valuable donors. Our local and international donors have graciously lent us a hand by
+                            supporting our causes and
+                            enabling us to serve the needs of people in need.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Introduction Start -->
 
+        <!-- Counter Start -->
+        <div class="container-fluid">
+            <div class="row bg-primary p-5">
+                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                    <div class="funfact text-center">
+                        <img src="image/Dastarkhwan.png" style="height: 40px;">
+                        <h2 class="titlecount">125,000</h2>
+                        <h5 class="text-white text-uppercase font-weight-600 titlecnt">Daily Dastrakhan<span
+                                class="text-themeout-colored font-weight-600">
+                                <font color="#00FF00">(Monthly)</font>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                    <div class="funfact text-center">
+                        <img src="image/welfare.png" style="height: 40px;">
+                        <h2 class="titlecount">7,500</h2>
+                        <h5 class="text-white text-uppercase font-weight-600 titlecnt">Family Adoption<span
+                                class="text-themeout-colored font-weight-600">
+                                <font color="#00FF00">(Monthly)</font>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                    <div class="funfact text-center">
+                        <img src="image/medical.png" style="height: 40px;">
+                        <h2 class="titlecount">43,749</h2>
+                        <h5 class="text-white text-uppercase font-weight-600 titlecnt">Medical<span
+                                class="text-themeout-colored font-weight-600">
+                                <font color="#00FF00">(Monthly)</font>
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+                    <div class="funfact text-center">
+                        <img src="image/education.png" style="height: 40px;">
+                        <h2 class="titlecount">180,000</h2>
+                        <h5 class="text-white text-uppercase font-weight-600 titlecnt">Education <span
+                                class="text-themeout-colored font-weight-600">
+                                <font color="#00FF00">(Monthly)</font>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counter End -->
 
+        <!-- What we are Start -->
+        <section>
+            <div class="container-fluid p-3 mb-2 bg-light text-dark">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-12 text-center my-4 title">
+                        <h2 class="text-uppercase text-primary">what we <span class="text-success font-weight-600">are
+                                doing
+                                ?</h2>
+                        <div class="title-icon">
+                            <img src="image/problem.PNG" style="height: 45px;">
+                        </div>
+                    </div>
+                </div>
 
+                <div class="row mt-2 pb-5">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="border text-center mt-4 w-100 bg-white shadow-lg py-4 doing-box">
+                            <img src="image/onlinesadqah.png" class="p-2" width="80px" alt="">
+                            <h4 class="p-2">ONLINE SADQAH</h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="border text-center mt-4 w-100 bg-white shadow-lg py-4 doing-box">
+                            <img src="image/welfare.png" class="p-2" width="80px" alt="">
+                            <h4 class="p-2">WELFARE</h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="border text-center mt-4 w-100 bg-white shadow-lg py-4 doing-box">
+                            <img src="image/medical.png" class="p-2" width="80px" alt="">
+                            <h4 class="p-2">MEDICAL</h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="border text-center mt-4 w-100 bg-white shadow-lg py-4 doing-box">
+                            <img src="image/Dastarkhwan.png" class="p-2" width="80px" alt="">
+                            <h4 class="p-2">DASTARKHWAN</h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="border text-center mt-4 w-100 bg-white shadow-lg py-4 doing-box">
+                            <img src="image/ROPLANT.png" class="p-2" width="80px" alt="">
+                            <h4 class="p-2">RO PLANT</h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="border text-center mt-4 w-100 bg-white shadow-lg py-4 doing-box">
+                            <img src="image/education.png" class="p-2" width="80px" alt="">
+                            <h4 class="p-2">EDUCATION</h4>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <!-- What we are Start -->
 
+        <!-- Mission & Projects Start -->
+        <section id="mission" class="bg-white">
+            <div class="container-fluid py-3">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="mission-heading position-relative">
+                            <h2 class="titles">MISSION AND UPCOMING PROJECTS</h2>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6 mt-4">
+                                <div class="d-flex border shadow pt-3 pl-4 mission-box">
+                                    <div>
+                                        <img src="image/Hepatitis.png" alt="">
+                                    </div>
+                                    <div class="ml-4 mt-1">
+                                        <p>HEPATITIS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <div class="d-flex border shadow pt-3 pl-4 mission-box">
+                                    <div>
+                                        <img src="image/housing.png" alt="">
+                                    </div>
+                                    <div class="ml-4 mt-1">
+                                        <p>HOUSING SOCIETY</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <div class="d-flex border shadow pt-3 pl-4 mission-box">
+                                    <div>
+                                        <img src="image/IT.png" alt="">
+                                    </div>
+                                    <div class="ml-4 mt-1">
+                                        <p>IT LITERACY</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4">
+                                <div class="d-flex border shadow pt-3 pl-4 mission-box">
+                                    <div>
+                                        <img src="image/tharparkar.png" alt="">
+                                    </div>
+                                    <div class="ml-4 mt-1">
+                                        <p>THARPARKAR</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 border">
+                        <div class="mission-heading position-relative border-bottom mb-3">
+                            <h2 class="titles pt-2">Upcoming Events</h2>
+                        </div>
+                        <marquee behavior="loop" direction="up" width="250px" height="200px" scrollamount="2"
+                            onmouseover="this.stop();" onmouseout="this.start();">
+                            Saylani Welfare Distributing Ration & Clothes to affected people of Balochistan
+                            <font color="blue">.More Details</font><br><br>
 
+                            Entry Test Accouncement (Graphic Designing & Video Editing/Animation Course) On Sunday 3rd
+                            March
+                            2019 @ 11:00Am Vanue:
+                            4rh Floor, Saylani Welfare International Trust HeadOffice Bahadurabad
+                            <font color="blue">.More
+                                Details</font><br><br>
 
+                            Dr Jamil Ahmed (Additional Inspector General of Police) & Atiqmir Visit Saylani Welfare
+                            International Trust, Saylani
+                            Mass I.T. Training <font color="blue">.More
+                                Details</font><br><br>
 
+                            PIAIC Entrance Exam Merit Ranking List Announced.More Details
+
+                            President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice
+                            Karachi <font color="blue">.More
+                                Details</font>
+
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Mission & Projects End -->
+
+        <!-- Image Gallery Start -->
+        <section>
+            <div class="container-fluid p-3 bg-light text-dark">
+                <div class="row">
+                    <div class="col-md-12 text-center my-2 title">
+                        <h2 class="text-uppercase text-primary blue">Image <span
+                                class="green text-success font-weight-600">Gallery
+                        </h2>
+                        <div class="title-icon">
+                            <img src="image/problem.PNG" style="height: 45px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center my-4">
+                    <div class="col-md-12">
+                        <img src="image/rashan2.jpg" class="img-fluid img-thumbnail" style=" width:230px;"
+                            alt="rashan2">
+                        <!-- </div>
+                <div class="col-md-3"> -->
+                        <img src="image/hazrat.jpg" class="img-fluid img-thumbnail" style=" width:230px;" alt="hazrat">
+                        <!-- </div>
+                <div class="col-md-3"> -->
+                        <img src="image/food.jpg" class="img-fluid img-thumbnail" style=" width:230px;" alt="food">
+                        <!-- </div>
+                <div class="col-md-3"> -->
+                        <img src="image/hazrat2.jpg" class="img-fluid img-thumbnail" style=" width:230px;"
+                            alt="hazrat2">
+                        <!-- </div>
+                <div class="col-md-3"> -->
+                        <img src="image/rashan2 (1).jpg" class="img-fluid img-thumbnail" style=" width:230px;"
+                            alt="rashan2-1">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image Gallery End -->
+
+        <!-- Footer Start-->
+        <footer id="footer" class="footer" data-bg-img="images/footer-bg.png" data-bg-color="#25272e">
+            <div class="container-fluid pt-70 pb-40 bg-secondary">
+                <div class="row border-bottom-black">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="widget dark py-5" style="color: #bbb;">
+                            <img class="mb-20" alt="" src="images/saylani/Saylani-logo.png ">
+                            <p>Head Office,
+                                <br> A-25, Bahadurabad Chowrangi
+                                Karachi, Pakistan </p>
+                            <ul class="list-inline mt-5">
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i>UAN:
+                                    111-729-526 </li>
+                                <li class="m-0 pl-10 pr-10"> <i
+                                        class="fa fa-globe text-theme-colored mr-5"></i>(+0092-213)
+                                    4130786-90</li>
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i>CELL:
+                                    92-311-1729526</li>
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i>USA NO
+                                    +1(716)941 7792 </li>
+                                <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored mr-5"></i>UK NO
+                                    (+44)115 970 6256 </li>
+                                <li class="m-0 pl-10 pr-10 pb-10"> <i
+                                        class="fa fa-envelope-o text-theme-colored mr-5"></i>
+                                    <a href="/cdn-cgi/l/email-protection" class="__cf_email__">xyz@saylani.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="widget dark" style="color: #bbb;">
+                            <h5 class="widget-title line-bottom pt-5">Useful Links</h5>
+                            <ul class="list angle-double-right list-border">
+                                <li><a href="https://www.dawateislami.net/islam/streaming/watch-live-madani-channel.htm"
+                                        target="_blank">Watch Free Islamic TV Online</a></li>
+                                <li><a href="https://www.dawateislami.net/medialibrary/" target="_blank">Watch Listen &
+                                        Download Islamic Videos</a></li>
+                                <li><a href="https://dawateislami.net/news" target="_blank">Latest Updates Of Dawat e
+                                        Islami</a></li>
+                                <li><a href="https://www.dawateislami.net/blog/" target="_blank">The Official Blog Of
+                                        Non-Political Islamic Organization-Dawateislami</a></li>
+                                <li><a href="https://www.dawateislami.net/prayertimes/" target="_blank">Time Table Of
+                                        Salah
+                                        In Most Country</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="widget dark">
+                            <h5 class="widget-title mb-10 pt-5">Connect With Us</h5>
+                            <ul class="styled-icons icon-dark icon-theme-colored icon-circled icon-sm">
+                                <li><a href="https://www.facebook.com/pg/saylaniwelfare" target="_blank"><i
+                                            class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/OfficialSwit" target="_blank"><i
+                                            class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/saylaniwelfare/" target="_blank"><i
+                                            class="fa fa-instagram text-white"></i></a></li>
+                                <li><a href="https://www.youtube.com/c/SaylaniWelfareTrustOfficialPage"
+                                        target="_blank"><i class="fa fa-youtube text-white"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class=" bottom">
+                Copyright &#169 2020 Saylani welfare
+            </div>
+        </footer>
+        <!-- Footer End -->
 
     </div>
 
 
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
 
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
 
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -216,6 +688,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script>
+        $('.carousel').carousel({
+            interval: 2000
+        })
+    </script>
+
 </body>
 
 </html>
